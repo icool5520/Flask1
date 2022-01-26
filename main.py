@@ -9,8 +9,6 @@ operations = ('+', ':', '**', '-', '*') # Используемые арифме�
 def next(num):
     a = int(num[0])
     b = int(num[-1])
-    c = 123
-    d = 111
     if num[1] == '+':
         return f"{a + b}"
     elif num[1] == '-':
