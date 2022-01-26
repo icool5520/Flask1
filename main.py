@@ -4,10 +4,12 @@ app = Flask(__name__)
 
 operations = ('+', ':', '**', '-', '*') # Используемые арифметические операторы для этого задания
 
+
 @app.route("/<string:num>/")
 def next(num):
     a = int(num[0])
     b = int(num[-1])
+    c = 123
     if num[1] == '+':
         return f"{a + b}"
     elif num[1] == '-':
